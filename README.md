@@ -30,9 +30,9 @@ function exchange_party:exchange_inverted
 
 # 入れ替えルール
 
+入れ替わらなかったり、入れ替え時にグループができないように交換します。
+
 ```
-入れ替わらなかったり、入れ替え時にグループができないように交換します。  
-  
 input: [1,2,3,4,5]  
 output: [3,2,4,5,1]  
 これは2が入れ替わっていないので、起こりません。  
@@ -48,10 +48,9 @@ output: [3,1,2,5,4]
   
 ```
 次の数値のリストを入れ替える場合  
-data modify storage test: test set value [1,2,3,4,5]  
   
 1. 入力するデータを設定  
-data modify storage ex_party: input set from storage test: test  
+data modify storage ex_party: input set value [1,2,3,4,5]  
   
 2. 入れ替えファンクションを実行  
 function exchange_party:exchange  
