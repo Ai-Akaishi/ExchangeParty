@@ -1,4 +1,8 @@
+### Copyright © 2020 赤石愛
+### This software is released under the MIT License, see LICENSE.
 
+#> exchange_party:system/shift/half_loop
+# 入れ替え用二分探索ループ
 
 data modify storage ex_party: data2 append from storage ex_party: data[-1]
 data remove storage ex_party: data[-1]

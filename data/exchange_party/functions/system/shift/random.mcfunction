@@ -1,4 +1,8 @@
+### Copyright © 2020 赤石愛
+### This software is released under the MIT License, see LICENSE.
 
+#> exchange_party:system/shift/random
+# ランダムにシフトする
 
 data modify storage ex_party: for set from storage ex_party: whole
 execute if data storage ex_party: {for:3} if predicate exchange_party:half_chance_for3 run function exchange_party:system/shift/half

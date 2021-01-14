@@ -1,4 +1,8 @@
+### Copyright © 2020 赤石愛
+### This software is released under the MIT License, see LICENSE.
 
+#> exchange_party:system/exchange
+# データを入れ替える
 
 execute unless data storage ex_party: {half:0} run function exchange_party:system/shift/random
 execute if data storage ex_party: data[-1].out run function exchange_party:system/shift/extra
