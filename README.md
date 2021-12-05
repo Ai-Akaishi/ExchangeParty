@@ -7,6 +7,7 @@
 # 動作確認済みバージョン / Verified minecraft versions
 
 - 1.17
+- 1.18
 
 以下のバージョンは右のReleasesからどうぞ。  
 For the following versions, please check Releases on the right.
@@ -26,10 +27,10 @@ ex_party: output
 # メソッド
 
 ```
-function exchange_party:exchange  
+function #exchange_party:exchange  
 データを入れ替えます。  
   
-function exchange_party:exchange_inverted  
+function #exchange_party:exchange/inverted  
 データを入れ替えて逆順にしたものにします。
 ```
 
